@@ -27,7 +27,7 @@ function percentOf (firstNum, secondNum) {
 
 function areaOfCircle(radius) {
 	var area = 2 * Math.PI * radius;
-	var areaRound = Math.round(area);
+	var areaRound = Math.round((area*100)/100);
 	var res = "The area for a circle with radius " + radius + " is " + areaRound;
 	document.getElementById("solution").innerHTML = res;
 
